@@ -18,6 +18,87 @@ class AirlineSystem:
 
     def load_flights(self):
         """Load flight from flight.txt"""
+
+        sample_flights = {
+            "SL001": {
+                "origin": "Colombo",
+                "destination": "Mumbai",
+                "seats": 50
+            },
+            "SL002": {
+                "origin": "Colombo",
+                "destination": "Delhi",
+                "seats": 45
+            },
+            "SL003": {
+                "origin": "Colombo",
+                "destination": "Bangalore",
+                "seats": 40
+            },
+            "SL004": {
+                "origin": "Colombo",
+                "destination": "Chennai",
+                "seats": 35
+            },
+            "SL005": {
+                "origin": "Colombo",
+                "destination": "Kolkata",
+                "seats": 30
+            },
+            "SL006": {
+                "origin": "Colombo",
+                "destination": "Hyderabad",
+                "seats": 25
+            },
+            "SL007": {
+                "origin": "Colombo",
+                "destination": "Pune",
+                "seats": 20
+            },
+            "SL008": {
+                "origin": "Colombo",
+                "destination": "Ahmedabad",
+                "seats": 22
+            },
+            "SL009": {
+                "origin": "Colombo",
+                "destination": "Kochi",
+                "seats": 28
+            },
+            "SL010": {
+                "origin": "Colombo",
+                "destination": "Goa",
+                "seats": 15
+            },
+            "SL011": {
+                "origin": "Colombo",
+                "destination": "Jaipur",
+                "seats": 18
+            },
+            "SL012": {
+                "origin": "Colombo",
+                "destination": "Chandigarh",
+                "seats": 12
+            },
+            "SL013": {
+                "origin": "Colombo",
+                "destination": "Lucknow",
+                "seats": 16
+            },
+            "SL014": {
+                "origin": "Colombo",
+                "destination": "Indore",
+                "seats": 14
+            },
+            "SL015": {
+                "origin": "Colombo",
+                "destination": "Bhubaneswar",
+                "seats": 10
+            }
+        }
+
+
+        
         try:
             with open(FLIGHTS_FILE, "r") as file:
                 for line in file:
